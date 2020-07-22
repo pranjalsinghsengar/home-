@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background: url(mainpic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    width: 100%;
+    color: orange;
+    display: flex;
+    letter-spacing: 2px;
+}
+
+.navbar h1 {
+    text-align: left;
+    margin: 20px 80px;
+    font-size: 50px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.ml2 {
+    font-size: 50px;
+    color: orange;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    font-family: 'Sacramento', cursive;
+}
+
+.navbar ul {
+    width: 100%;
+    text-decoration: none;
+    margin: 30px 20px;
+    text-align: center;
+}
+
+.navbar a {
+    margin: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 2em;
+}
+
+.navbar a:hover {
+    box-shadow: 1px 2px 8px orange;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.content .card {
+    display: flex;
+}
+
+.content .card1 {
+    margin: 40px 20px 0 30px;
+    width: 18%;
+    background: rgb(10, 10, 10);
+    border: 0.5px solid rgb(39, 34, 34);
+    box-shadow: 2px 10px 25px;
+}
+
+.card1:hover {
+    box-shadow: 1px 1px 5px orange;
+}
+
+.content .card1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.card1 h2 {
+    line-height: 20vh;
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-top: 60px;
+    color: orange;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer p {
+    font-family: 'Dancing Script', cursive;
+}
+
+@media (max-width:1111px) {
+    .content .card1 {
+        width: 20%;
+    }
+}
+
+@media (max-width:990px) {
+    .navbar a {
+        margin: 18px;
+        font-size: 13px;
+    }
+    .content .card1 {
+        width: 21%;
+        height: 20vh;
+    }
+    .navbar h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:899px) {
+    .navbar a {
+        margin: 15px;
+        font-size: 13px;
+    }
+    .content .card1 {
+        width: 22%;
+        height: 18vh;
+    }
+    .navbar h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width:845px) {
+    .navbar a {
+        margin: 8px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:800px) {
+    body {
+        background: url(mainpic.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .navbar a {
+        font-size: 9px;
+    }
+    .content .card1 {
+        height: 15vh;
+    }
+}
